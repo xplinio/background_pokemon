@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon-16x16.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Pokemon_background</title>
+
+</head>
+<body>
+
+    <section>
+        <div class="background-section">
+
+            <video src="assets/primeira_abertura_pokemon.mp4" autoplay loop muted>
+            </video>
+
+        </div>
+        <div class="box">
+            <div class="conteudo">
+
+                <img src="assets/International_Pokémon_logo.svg.png" alt="logo Pokemon_background">
+                
+                <p>
+                    Prepare sua Pokébola, chame seus amigos e venha se juntar a nós nesta jornada nostálgica. Vamos capturar não apenas Pokémon, mas também memórias preciosas! <a onclick="playSound();"> Ouça aqui! </a>
+                </p>
+
+                <audio id="sound" loop>
+                    <source src="assets/pokemon_audio.mp4" type="audio/mp4">
+                </audio>                
+            </div>
+        </div>
+</section>
+
+<script>
+    function playSound() {
+        let sound = document.getElementById("sound");
+        sound.play();
+    }
+</script>
+    
+</body>
+</html>
